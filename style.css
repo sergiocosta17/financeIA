@@ -55,18 +55,51 @@ nav a:hover {
 }
 
 .btn {
-    background: #000080;
+    background-color: #000080;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
     font-size: 16px;
-    transition: background 0.3s;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-    background: #000080;
+    background-color: #292991;
+}
+
+.btn-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-arrow .arrow-box {
+    width: 30px;
+    height: 30px;
+    background-color: #18189c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-arrow .arrow {
+    display: inline-block;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    padding: 5px;
+    transform: rotate(-45deg);
+}
+
+.btn-arrow:hover .arrow-box {
+    transform: translateX(5px);
 }
 
 .hero {
